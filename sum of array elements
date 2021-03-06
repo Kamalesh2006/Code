@@ -1,0 +1,5 @@
+list1=eval(input("enter the list elements like[x,y,z] to find its sum"))
+total=0
+for i in list1:
+    total = total + i
+print(total)    
