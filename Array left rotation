@@ -1,0 +1,20 @@
+#array left rotation
+arr=eval(input("Enter the list value in []"))
+print()
+print(arr)
+print()
+length=len(arr)
+leftshift=int(input("enter how much to left shift/ rotate"))
+print()
+j=0
+while j<leftshift:
+    i=0
+    temp=arr[0]
+    while i<=length-2:
+        arr[i]=arr[i+1]
+        i=i+1
+    arr[length-1]=temp
+    j=j+1
+
+print(arr)
+
