@@ -1,0 +1,13 @@
+#nth fibonnoci number
+n=int(input("enter n value"))
+print()
+x =0
+y=1
+counter=0
+while counter!=n:
+    total=x+y
+    x=y
+    y=total    
+    counter = counter+1
+print(n,"th value of fibonicci sequence is",total)
+    
