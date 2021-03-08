@@ -1,0 +1,50 @@
+#array rotation by reversal method
+def firstarray(arr,d):
+    i=0
+    temp=[]
+    while i<d:
+        temp.append(arr[i])
+        i=i+1
+    return temp
+
+
+def secondarray(arr,d):
+    i=d
+    temp=[]
+    while i<len(arr):
+        temp.append(arr[i])
+        i=i+1
+    return temp
+        
+def reversal(arr):
+    length=len(arr)
+    mid=length//2
+    i=0
+    while i<mid:
+        value=arr[i]
+        arr[i]=arr[length-(i+1)]
+        arr[length-(i+1)]=value
+        i=i+1
+    return arr
+         
+        
+list=eval(input("enter the array elements inside []"))
+print()
+rotate=int(input("enter the rotation value"))
+print()
+print("your list is ",list)
+print()
+firlist=firstarray(list,rotate)
+print("A is",firlist)
+seclist=secondarray(list,rotate)
+print("B is ",seclist)
+#rotation by reversal method
+revfir=reversal(firlist)
+print("A reverse is ",revfir)
+revsec=reversal(seclist)
+print("B reverse is ",revsec)
+finallist=revfir+revsec
+print(finallist)
+print("rotation by reversal method is as follows \n",reversal(finallist))
+
+
