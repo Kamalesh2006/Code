@@ -1,0 +1,28 @@
+#Python program to check if given string is vowel Palindrome
+
+def palindrome(str):
+    length =len(str)
+    mid=length//2
+    for i in range(mid):
+        if str[i]==str[length-1]:
+            length =length-1
+        else:
+            return 'no'
+            break
+    else:
+        return "yes"   
+        
+
+
+
+vowels="aeiou"
+words=input("Enter some String\n")
+for x in words :
+    if x in vowels:
+            continue
+    else:
+            index=words.index(x)
+            words=words[:index]+words[index+1:]
+            
+
+print(palindrome(words))
