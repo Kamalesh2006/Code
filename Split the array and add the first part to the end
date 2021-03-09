@@ -1,0 +1,12 @@
+#split the array and add the first part to the end
+list=eval(input("Enter the array inside[]\n"))
+print("Entered array is \n",list)
+divide=int(input("Enter spliting value\n"))
+#first part
+print("After splitting the array, the first part is",list[:divide])
+#second part
+print()
+print("Second part is\n",list[divide:],"\n")
+print("Adding first part to the end")
+list2=list[divide:]+list[:divide]
+print(list2)
