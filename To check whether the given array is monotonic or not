@@ -1,0 +1,21 @@
+#to find the given array is monotonic or not
+list=eval(input("Enter the array inside []\n"))
+print("Your array is\n",list)
+if list[0]>list[1]:
+    for i in range(len(list)-1):
+        if list[i]>=list[i+1]:
+            continue
+        else:
+            print("False")
+            break
+    else:
+        print("True your array is monotonically decreasing")
+else:
+    for i in range(len(list)-1):
+        if list[i]<=list[i+1]:
+            continue
+        else:
+            print("False")
+            break
+    else:
+        print("True your array is monotonically increasing")
