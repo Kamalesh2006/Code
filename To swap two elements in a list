@@ -1,0 +1,7 @@
+#Python program to swap two elements in a list
+list=eval(input("Enter the list inside []\n"))
+print("Yoir list is\n",list)
+pos1=int(input("Enter the first position to swap"))
+pos2=int(input("Enter the second postion to swap"))
+list[pos1-1],list[pos2-1]=list[pos2-1],list[pos1-1]
+print("Swapped list is\n",list)
