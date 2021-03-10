@@ -1,0 +1,10 @@
+#Python Program for Find remainder of array multiplication divided by n
+list=eval(input("Enter the array inside []\n"))
+n=int(input("Enter the n value\n"))
+list2=[]
+for i in list:
+    list2.append(i%n)
+product=1
+for j in list2:
+    product=product*j
+print("Reminder is ",(product%n))
